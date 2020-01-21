@@ -31,3 +31,17 @@ Khi gọi hàm f() thì biến x cũng được gán bằng 1
 29. **Bitwise (Zero Fill) Right shift(>>>)**
     * Syntax: n >>> a
     * Dịch a bit sang bên phải và thêm vào sau bên trái các bit 0
+
+### trick 3
+   * Expresstion: exp1 = exp2 = exp3
+   * Thực hiện từ trái sang phải như sau: gán exp1 = exp2 và exp2 = exp3. Nếu trong exp1 có biểu thức thì tính luôn
+   * VD: s[v -= v / 2] = i -= s[v]
+   * Giải thích: 
+       * Gán giá trị phần tử s[v -= v / 2] = i nhưng đồng thời v -= v / 2
+       * Giá trị của i -= s[v] mà lúc này giá trị của v đã là v -= v/2
+   * Có thể viết lại như sau:
+   ```
+   v -= v/2;
+   i -= s[v]
+   s[v] = i
+   ```
