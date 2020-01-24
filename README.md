@@ -45,3 +45,9 @@ Khi gọi hàm f() thì biến x cũng được gán bằng 1
    i -= s[v]
    s[v] = i
    ```
+   
+
+### trick 4
+   * ```a ^ a = 0```
+   * ```0 ^ a = a```
+   * Kiểm tra điều kiện ```a || b``` có thể được viết ngắn hơn là ```a | b```
