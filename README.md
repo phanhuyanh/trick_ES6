@@ -51,3 +51,6 @@ Khi gọi hàm f() thì biến x cũng được gán bằng 1
    * ```a ^ a = 0```
    * ```0 ^ a = a```
    * Kiểm tra điều kiện ```a || b``` có thể được viết ngắn hơn là ```a | b```
+  
+### trick 5
+   * (a * b) % m = ((a % m) * (b % m)) % m
